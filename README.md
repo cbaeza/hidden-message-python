@@ -41,5 +41,11 @@ The end of message token is used to indicate the end of message and also is used
 Run the code
 
     $ python3 main.py
-    
+    >>> WriteSecretMessage! 'Greeting from Germany!' in picture: Igel.png
+    Image size: (4032, 3024)
+    Message len: 184
+    The message has been written correctly!
+    >>> Decoding message of picture: Igel2.png
+    >>> Hidden message: Greeting from Germany!
+
 Have fun !
