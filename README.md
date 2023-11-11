@@ -5,8 +5,8 @@ The following tool hide a message into a PNG image. The produces of the message 
 
 ## LSB (Least Significant Bit) Substitution
 You can hidde a secret message using the least significant bits.
-The technic is called Steganography and can be applied to both grayscale and color images. In color images, channels like Red, Green, and Blue (RGB) can be used independently or jointly to hide information.
-This techniques wrote in the code involve modify the values of the first color channels to encode the hidden data.
+The technique is called Steganography and can be applied to both grayscale and color images. In color images, channels like Red, Green, and Blue (RGB) can be used independently or jointly to hide information.
+This technique used in the code involve modify the values of the first color channels to encode the hidden data.
 
 # Usage
 Given a input image in PNG format like this example:
@@ -23,7 +23,7 @@ Encoding a message
     m = WriteSecretMessage(secret_message, "Igel.png","Igel2.png", end_of_message_token)
     m.hidde_message_in_picture()
 
-The producec output is a image (Igel2.png) which is apparently the same as the original image. The technic 
+The code produces the output image (Igel2.png) which is apparently the same as the original image (Idel.png). The technique 
 make the changes indetectable to the human eyes.
 
 The image produced with the hidden message is the following:  
