@@ -52,11 +52,11 @@ class ReadSecretMessage:
       return self.hidden_message
     
     def transform(self, byte):
-       print(f"Read byte: {byte}")
+       #print(f"Read byte: {byte}")
        dec = self.binary_to_decimal(byte)
-       print(f"Decimal: {dec}")
+       #print(f"Decimal: {dec}")
        ascii = self.number_to_ascii(dec)
-       print(f"Ascii: {ascii}")
+       #print(f"Ascii: {ascii}")
        return ascii
 
     def get_less_sig_bit(self, byte):

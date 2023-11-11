@@ -52,8 +52,8 @@ class WriteSecretMessage:
                         blue_modified = blue
 
                     pixels[x, y] = (red_modified, green_modified, blue_modified)
-                    print(f">>> Counter: {counter}")
-                    print(f">>> Image len: {len(message_list)}")
+                    #print(f">>> Counter: {counter}")
+                    #print(f">>> Image len: {len(message_list)}")
     
                 else:
                     break
@@ -95,11 +95,11 @@ class WriteSecretMessage:
         return list
     
     def modify_color(self, original_color, bit):
-        print(f"Bit: {bit}")
+        #print(f"Bit: {bit}")
         binary_color = self.get_binary_representation(original_color)
-        print(f"binary_color: {binary_color}") 
+        #print(f"binary_color: {binary_color}") 
         modified_color = self.change_last_bit(binary_color, bit)
-        print(f"modified_color: {modified_color}")
+        #print(f"modified_color: {modified_color}")
         dec = self.binary_to_decimal(modified_color)
-        print(f"dec: {dec}")
+        #print(f"dec: {dec}")
         return dec

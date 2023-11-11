@@ -38,4 +38,8 @@ Decoding the message
 
 The end of message token is used to indicate the end of message and also is used to detect and finish the decoding process.
 
+Run the code
+
+    $ python3 main.py
+    
 Have fun !
