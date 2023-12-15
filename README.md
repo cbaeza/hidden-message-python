@@ -1,7 +1,7 @@
 # Steganography: Hidden message in PNG images.
 
 The project aim to be used for educational purposes. 
-The following tool hide a message into a PNG image. The produces of the message can hidde the message using **WriteSecretMessage.py**. The receptor of the image can read the hidden message using the **ReadSecretMessage.py**.
+The following tool hide a message into a PNG image. The producer of the message can hidde the message using **WriteSecretMessage.py**. The receptor of the image can read the hidden message using the **ReadSecretMessage.py**.
 
 ## LSB (Least Significant Bit) Substitution
 You can hidde a secret message using the least significant bits.
@@ -23,7 +23,7 @@ Encoding a message
     m = WriteSecretMessage(secret_message, "Igel.png","Igel2.png", end_of_message_token)
     m.hidde_message_in_picture()
 
-The code produces the output image (Igel2.png) which is apparently the same as the original image (Idel.png). The technique 
+The code produces the output image (Igel2.png) which is apparently the same as the original image (Igel.png). This technique 
 make the changes indetectable to the human eyes.
 
 The image produced with the hidden message is the following:  
